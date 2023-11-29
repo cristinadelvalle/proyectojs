@@ -36,7 +36,7 @@ crearTarjetasProductosInicio(remeras);
 
 const jeans = document.querySelector("#jeans")
 
-fetch("/js/jeans.json")
+fetch("./js/jeans.json")
 .then((res) => res.json())
 .then((data)=> {
 console.table(data);

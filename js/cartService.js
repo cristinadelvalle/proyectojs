@@ -60,6 +60,7 @@ function actualizarNumeroCarrito(){
 
 }
 
+
 function reiniciarCarrito(){
   localStorage.removeItem("remeras");
   actualizarNumeroCarrito();

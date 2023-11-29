@@ -1,0 +1,24 @@
+[
+  {
+    "id": 9,
+    "nombre": "Wait leg",
+    "precio": 20000
+  },
+  {
+    "id": 10,
+    "nombre": "Rígido",
+    "precio": 25000
+  },
+ 
+  {
+    "id": 12,
+    "nombre": "Palazzo",
+    "precio": 0
+  },
+  {
+    "id": 13,
+    "nombre": "Mon fit",
+    "precio": 18000
+  }
+
+]

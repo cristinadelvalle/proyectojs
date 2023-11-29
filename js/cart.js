@@ -12,7 +12,7 @@ function crearTarjetasProductosCarrito() {
       const nuevaRemera = document.createElement("div");
       nuevaRemera.classList = "tarjeta-producto";
       nuevaRemera.innerHTML = `
-    <img src="./img/productos/${producto.id}.jpg" alt="remera 1">
+    <img src="../img/productos/${producto.id}.jpg" alt="remera 1">
     <h3>${producto.nombre}</h3>
     <span>$${producto.precio}</span>
     <div>
@@ -71,11 +71,36 @@ document.getElementById("reiniciar").addEventListener("click", () => {
   revisarMensajeVacio();
 });
 
+
 function revisarMensajeVacio() {
   const productos = JSON.parse(localStorage.getItem("remeras"));
   carritoVacioElement.classList.toggle("escondido", productos);
   totalesContainer.classList.toggle("escondido", !productos);
 }
+
+
+
+
+
+
+
+
+const comprar = document.querySelector("#comprar")
+comprar.addEventListener("click", () => {
+Swal.fire({
+    position: "center",
+    icon: "success",
+    title: "Gracias por tu compra",
+    showConfirmButton: false,
+    timer: 2000
+  });
+})
+  
+
+
+
+
+
 
 
 

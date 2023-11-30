@@ -5,7 +5,7 @@ function crearTarjetasProductosInicio(productos) {
     const nuevaRemera = document.createElement("div");
     nuevaRemera.classList = "tarjeta-producto";
     nuevaRemera.innerHTML = `
-    <img src="../img/productos/${producto.id}.jpg" alt="${producto.id} ">
+    <img src="./img/productos/${producto.id}.jpg" alt="${producto.id} ">
     <h3>${producto.nombre}</h3>
     <p class="precio">$${producto.precio}</p>
     <button id="toastify"> Agregar al carrito</button>
@@ -43,7 +43,7 @@ fetch("./js/jeans.json")
 
       nuevoJean.classList = "tarjeta-producto";
       nuevoJean.innerHTML = ` 
-    <img src="../img/productos/${producto.id}.jpg" alt="${producto.id} ">
+    <img src="./img/productos/${producto.id}.jpg" alt="${producto.id} ">
     <h3>${producto.nombre}</h3>
     <p class="precio">$${producto.precio}</p>
     <button id="toastify"> Agregar al carrito</button>
